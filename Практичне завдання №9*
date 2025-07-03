@@ -1,0 +1,6 @@
+def min_steps(x, y):
+    d = y - x
+    n = 0
+    while n * (n + 1) // 2 < d:
+        n += 1
+    return 2 * n - 1 if d <= n * n else 2 * n
