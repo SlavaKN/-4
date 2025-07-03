@@ -1,0 +1,9 @@
+from math import factorial
+from collections import Counter
+
+word = input().strip()
+counts = Counter(word.upper())
+total = factorial(len(word))
+for c in counts.values():
+    total //= factorial(c)
+print(total)
